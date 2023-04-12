@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="MonitorNugetUpdates.bdd7b386-647b-42fb-9a79-13eafe471f90" Version="1.0" Language="en-US" Publisher="Anusha" />
+        <DisplayName>Nuget updates Notifier</DisplayName>
+        <Description xml:space="preserve">An extension that checks if an update is available for nuget packages installed for the project and shows a notification to the user for the sameAn extension that checks if an update is available for nuget packages installed for the project and shows a notification to the user for the same.An extens</Description>
+        <Icon>nuget.png</Icon>
+        <Tags>Nuget packages, updates, notifier, notification, nuget, package update, third party lib</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[16.0, 17.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+</PackageManifest>
